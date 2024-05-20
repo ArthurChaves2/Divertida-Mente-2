@@ -1,0 +1,117 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #01001b;
+    color: #fff;
+}
+
+/* Container */
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #1c1c1c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    color: #e50914;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Seções */
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ad001a;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e50914;
+    display: inline-block;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+li::before {
+    content: '•';
+    color: #e50914;
+    margin-right: 0.5rem;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #2f2f2f;
+}
+
+th, td:first-child {
+    font-weight: bold;
+}
+
+th, td:last-child {
+    text-align: right;
+}
+
+/* Imagem */
+.img-secundaria {
+    width: 100%;
+    max-width: 600px; /* Aumentando a largura máxima */
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem auto;
+    border: 3px solid #e50914;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+    }
+}
